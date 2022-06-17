@@ -116,7 +116,7 @@ Preloader
   animation: bgTranslateSpeed 15s linear infinite;
   transition-delay: 0.4s;
   background: url(../img/Top_Bg.png) repeat;
-  background-size: 80%;
+  background-size: 25%;
 }
 
 @keyframes bgTranslate {
