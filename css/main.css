@@ -174,10 +174,7 @@ Preloader
   position: relative;
 }
 @media screen and (max-width: 1440px) {
-  .preloader__elem img{
-    width: 230px;
-    height: auto;
-  }
+  
 }
 @media screen and (max-width: 1200px) {
   .preloader__speed{
@@ -192,6 +189,10 @@ Preloader
 @media screen and (max-width: 767px) {
   .preloader__speed{
     background-size: 35%;
+  }
+  .preloader__elem img{
+    width: 230px;
+    height: auto;
   }
 }
 @media screen and (max-width: 568px) {
