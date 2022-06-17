@@ -1,0 +1,274 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #252c44;
+}
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #10131e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+}
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main h1 {
+  font-size: 48px;
+  color: #fff;
+}
+/* 
+**********************************************
+Preloader 
+**********************************************
+*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #10131e;
+  display: flex;
+  justify-content: center;
+  transition: all 0.4s ease;
+  z-index: 20;
+  overflow: hidden;
+}
+.preloader.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+.preloader__container {
+  /* max-width: 50%; */
+  width: 120vh;
+  transform: translateY(-10vh);
+  height: 120vh;
+  background-position: left bottom;
+  background-repeat: repeat;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: containerShow 0.6s ease forwards;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1440px) {
+  /* .preloader__container {
+    max-width: 800px;
+  } */
+}
+@keyframes containerShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.preloader__container:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 500;  
+  border-radius: 50%;
+  box-shadow: inset 0 0 58px 69px #10131e;
+}
+.preloader__speed,
+.preloader__star {
+  content: '';
+  display: block;
+  width: 300%;
+  height: 300%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url(../img/star.png) repeat;
+  animation: bgTranslate 15s linear forwards;
+  transition: all 0.4s linear;
+  z-index: 100;
+}
+.preloader__speed {
+  opacity: 0.5;
+  animation: bgTranslate 12s linear forwards;
+  transition-delay: 0.2s;
+}
+@keyframes bgTranslate {
+  0% {
+    transform: translate3d(0%, 0%, 0);
+  }
+  100% {
+    transform: translate3d(-66%, 66%, 0);
+  }
+}
+.preloader__elem {
+  width: 250px;
+  height: 243px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 300;
+}
+.preloader__elem:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #10131e;
+  filter: blur(24px);
+  border-radius: 167px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.preloader__elem img {
+  position: relative;
+}
+.preload__anim {
+  animation: pulsComet 2s linear 7;
+}
+@keyframes pulsComet {
+  0% {
+    transform: rotate(-3deg);
+  }
+  2.5% {
+    transform: rotate(3deg);
+  }
+  5% {
+    transform:rotate(-3deg);
+  } 
+  5.5% {
+    transform: rotate(3deg);
+  }
+  10% {
+    transform:rotate(-3deg);
+  }
+  12.5% {
+    transform: rotate(3deg);
+  }
+  15% {
+    transform: rotate(-3deg);
+  }
+  17.5% {
+    transform: rotate(3deg);
+  }
+  20% {
+    transform: rotate(-3deg);
+  }
+  22.5% {
+    transform: rotate(3deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  27.5% {
+    transform: rotate(3deg);
+  }
+  30% {
+    transform:rotate(-3deg);
+  }
+  32.5% {
+    transform: rotate(3deg);
+  }
+  35% {
+    transform: rotate(-3deg);
+  }
+  37.5% {
+    transform: rotate(3deg);
+  }
+  40% {
+    transform:rotate(-3deg);
+  }
+  42.5% {
+    transform: rotate(3deg);
+  }
+  45% {
+    transform: rotate(-3deg);
+  }
+  47.5% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform:rotate(-3deg);
+  }
+  52.5% {
+    transform: rotate(3deg);
+  }
+ 
+  55% {
+    transform: rotate(-3deg);
+  }
+  57.5% {
+    transform: rotate(3deg);
+  }
+  60% {
+    transform:rotate(-3deg);
+  }
+  62.5% {
+    transform: rotate(3deg);
+  }
+  65% {
+    transform: rotate(-3deg);
+  }
+  67.5% {
+    transform: rotate(3deg);
+  }
+  70% {
+    transform:rotate(-3deg);
+  }
+  72.5% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+  77.5% {
+    transform: rotate(3deg);
+  }
+  80% {
+    transform:rotate(-3deg);
+  }
+  82.5% {
+    transform: rotate(3deg);
+  }
+  85% {
+    transform: rotate(-3deg);
+  }
+  87.5% {
+    transform: rotate(3deg);
+  }
+  90% {
+    transform:rotate(-3deg);
+  }
+  92.5% {
+    transform: rotate(3deg);
+  }
+  95% {
+    transform: rotate(-3deg);
+  }
+  97.5% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform:rotate(-3deg);
+  }
+}
