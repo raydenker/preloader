@@ -111,13 +111,11 @@ Preloader
   transition: all 0.4s linear;
   z-index: 100;
   z-index: 4;
-
-  animation: bgTranslate 12s linear forwards;
 }
 
 .preloader__speed {
   opacity: 0.5;
-  animation: bgTranslateSpeed 15s linear forwards;
+  animation: bgTranslateSpeed 15s linear infinite;
   transition-delay: 0.4s;
 }
 
