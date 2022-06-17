@@ -103,7 +103,7 @@ Preloader
   left: 0;
   bottom: 0;
   background: url(../img/Star_bg.png) repeat;
-  animation: bgTranslate 28s linear infinite;
+  animation: bgTranslate 30s linear infinite;
   transition: all 0.4s linear;
   z-index: 100;
   z-index: 4;  
@@ -116,7 +116,7 @@ Preloader
   animation: bgTranslateSpeed 15s linear infinite;
   transition-delay: 0.4s;
   background: url(../img/Top_Bg.png) repeat;
-  background-size: 25%;
+  background-size: 20%;
 }
 
 @keyframes bgTranslate {
@@ -177,5 +177,30 @@ Preloader
   .preloader__elem img{
     width: 230px;
     height: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .preloader__speed{
+    background-size: 25%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .preloader__speed{
+    background-size: 30%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .preloader__speed{
+    background-size: 35%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .preloader__speed{
+    background-size: 40%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .preloader__speed{
+    background-size: 45%;
   }
 }
