@@ -81,11 +81,7 @@ Preloader
   z-index: 5;
 }
 
-@media screen and (max-width: 1440px) {
-  /* .preloader__container {
-    max-width: 800px;
-  } */
-}
+
 
 @keyframes containerShow {
   0% {
@@ -175,4 +171,10 @@ Preloader
 
 .preloader__elem img {
   position: relative;
+}
+@media screen and (max-width: 1440px) {
+  .preloader__elem img{
+    width: 230px;
+    height: auto;
+  }
 }
