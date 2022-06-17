@@ -106,26 +106,36 @@ Preloader
   /* animation: bgTranslate 30s linear infinite; */
   transition: all 0.4s linear;
   z-index: 100;
-  z-index: 4;  
+  z-index: 4;
   opacity: 1;
 }
 
 .preloader__speed {
-  
-  opacity:0;
+  opacity: 0;
   animation: bgTranslateSpeed 15s linear infinite;
   transition-delay: 0.4s;
-  background: url(../img/Top_Bg.png) repeat;
+  background: url(../img/Top_Bg1.png) repeat;
   background-size: 20%;
+}
+
+.preloader__speed_second {
+  background: url(../img/Top_Bg2.png) repeat;
+  animation: bgTranslate 25s linear infinite;
 }
 
 @keyframes bgTranslate {
   0% {
-    transform: translate3d(0%, 0%, 0);
+    opacity: 0;
+    transform: translate3d(-15%, 0%, 0);
+  }
+
+  5% {
+    opacity: 1;
   }
 
   100% {
-    transform: translate3d(0%, 66%, 0);
+    opacity: 1;
+    transform: translate3d(-15%, 66%, 0);
   }
 }
 
@@ -173,35 +183,40 @@ Preloader
 .preloader__elem img {
   position: relative;
 }
-@media screen and (max-width: 1440px) {
-  
-}
+
+@media screen and (max-width: 1440px) {}
+
 @media screen and (max-width: 1200px) {
-  .preloader__speed{
+  .preloader__speed {
     background-size: 25%;
   }
 }
+
 @media screen and (max-width: 992px) {
-  .preloader__speed{
+  .preloader__speed {
     background-size: 30%;
   }
 }
+
 @media screen and (max-width: 767px) {
-  .preloader__speed{
+  .preloader__speed {
     background-size: 35%;
   }
-  .preloader__elem img{
+
+  .preloader__elem img {
     width: 230px;
     height: auto;
   }
 }
+
 @media screen and (max-width: 568px) {
-  .preloader__speed{
+  .preloader__speed {
     background-size: 40%;
   }
 }
+
 @media screen and (max-width: 400px) {
-  .preloader__speed{
+  .preloader__speed {
     background-size: 45%;
   }
 }
