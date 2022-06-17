@@ -106,17 +106,20 @@ Preloader
   position: absolute;
   left: 0;
   bottom: 0;
-  background: url(../img/star.png) repeat;
-  animation: bgTranslate 15s linear forwards;
+  background: url(../img/Star_bg.png) repeat;
+  animation: bgTranslate 15s linear infinite;
   transition: all 0.4s linear;
   z-index: 100;
-  z-index: 4;
+  z-index: 4;  
+  opacity: 1;
 }
 
 .preloader__speed {
-  opacity: 0.5;
-  animation: bgTranslateSpeed 15s linear infinite;
+  
+  opacity:0;
+  animation: bgTranslateSpeed 11s linear infinite;
   transition-delay: 0.4s;
+  background: url(../img/Top_Bg.png) repeat;
 }
 
 @keyframes bgTranslate {
@@ -136,11 +139,11 @@ Preloader
   }
 
   5% {
-    opacity: 0.5;
+    opacity: 1;
   }
 
   100% {
-    opacity: 0.5;
+    opacity: 1;
     transform: translate3d(-15%, 66%, 0);
   }
 }
