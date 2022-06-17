@@ -107,7 +107,7 @@ Preloader
   left: 0;
   bottom: 0;
   background: url(../img/Star_bg.png) repeat;
-  animation: bgTranslate 15s linear infinite;
+  animation: bgTranslate 20s linear infinite;
   transition: all 0.4s linear;
   z-index: 100;
   z-index: 4;  
@@ -117,7 +117,7 @@ Preloader
 .preloader__speed {
   
   opacity:0;
-  animation: bgTranslateSpeed 11s linear infinite;
+  animation: bgTranslateSpeed 15s linear infinite;
   transition-delay: 0.4s;
   background: url(../img/Top_Bg.png) repeat;
 }
