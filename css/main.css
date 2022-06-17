@@ -182,6 +182,7 @@ Preloader
 
 .preloader__elem img {
   position: relative;
+  width: 270px;
 }
 
 @media screen and (max-width: 1440px) {}
